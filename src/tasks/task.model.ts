@@ -1,4 +1,4 @@
-export interface Task  {
+export interface Task {
     id: string,
     title: string,
     description: string,
@@ -6,7 +6,7 @@ export interface Task  {
 }
 
 export enum TaskStatus {
-    OPEN = 'OPEN',
+    OPEN = 'OPENS',
     IN_PROGRESS = 'IN_PROGRESS',
     DONE = 'DONE'
 }
