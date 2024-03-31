@@ -12,7 +12,6 @@ export class TasksService {
     }
 
     getTaskWithFilters(filterDto: FilterDto): Task[] {
-
         const { status, search } = filterDto
         let tasks = this.getAllTasks()
 
@@ -55,6 +54,6 @@ export class TasksService {
 
     deleteTaskById(id: string): string {
         this.tasks = this.tasks.filter(task => task.id !== id)
-        return 'Success'
+        return 'Successfully deleted'
     }
 }
